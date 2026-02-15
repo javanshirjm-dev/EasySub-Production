@@ -19,7 +19,7 @@ export default function Header() {
 
     // -- WHATSAPP LINK --
     // Replace with your actual number
-    const whatsappUrl = "https://wa.me/15550123456?text=I%20need%20support";
+    const whatsappUrl = "https://wa.me/994515978888?text=I%20need%20support";
 
     // 1. Handle Clock Tick
     useEffect(() => {
@@ -57,8 +57,16 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
 
                 {/* --- LOGO --- */}
-                <Link href="/" className="text-2xl font-black text-blue-600 tracking-tighter hover:scale-105 transition-transform flex-shrink-0">
-                    EASY<span className="text-blue-900">SUB</span>.
+                <Link
+                    href="/"
+                    className="text-2xl font-black text-blue-600 tracking-tighter hover:scale-105 transition-transform flex-shrink-0 [-webkit-text-stroke:1.5px_currentColor]"
+                >
+                    EASY
+                    {/* We apply the stroke here too so it matches the SUB color, not the parent color */}
+                    <span className="text-blue-900 [-webkit-text-stroke:1.5px_currentColor]">
+                        SUB
+                    </span>
+                    .
                 </Link>
 
                 {/* --- SEARCH BAR --- */}
