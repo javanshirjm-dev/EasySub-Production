@@ -53,7 +53,7 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-blue-50/80 backdrop-blur-md sticky top-0 z-50 border-b border-blue-100 shadow-sm">
+        <header className="bg-blue-50 backdrop-blur-md sticky top-0 z-50 border-b border-blue-100 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
 
                 {/* --- LOGO --- */}
