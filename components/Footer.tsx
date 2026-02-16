@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="relative z-10 max-w-7xl mx-auto px-6">
 
                 {/* Top Grid Layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-7">
 
                     {/* COL 1: Brand & Newsletter (Span 5) */}
                     <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-8">
@@ -56,7 +56,7 @@ const Footer = () => {
                                         EASY<span className="text-blue-500">SUB</span>.
                                     </span>
                                     <span className="text-[10px] font-mono text-gray-500 tracking-[0.2em] mt-1">
-                                        SYSTEM ONLINE v2.4
+                                        SYSTEM ONLINE v1.03
                                     </span>
                                 </div>
                             </Link>
@@ -82,32 +82,7 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:col-span-4 grid grid-cols-2 gap-8">
-                        <div>
-                            <h4 className="font-mono text-xs text-blue-400 mb-6 uppercase tracking-wider">Product</h4>
-                            <ul className="space-y-4">
-                                {['Features', 'Integrations', 'Pricing', 'Changelog'].map((item) => (
-                                    <li key={item}>
-                                        <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                            <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-blue-500 transition-colors" />
-                                            {item}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-mono text-xs text-blue-400 mb-6 uppercase tracking-wider">Resources</h4>
-                            <ul className="space-y-4">
-                                {['Documentation', 'API Reference', 'Community', 'Help Center'].map((item) => (
-                                    <li key={item}>
-                                        <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                            <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-blue-500 transition-colors" />
-                                            {item}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+
                     </div>
 
                     {/* COL 3: Stats Card (Span 3) */}
@@ -119,7 +94,7 @@ const Footer = () => {
 
 
                             {/* Middle Part */}
-                            <div className="relative z-10 mt-7">
+                            <div className="relative z-10 mt-3">
                                 <div className="text-4xl font-mono text-white tracking-tighter tabular-nums">
                                     1,024
                                 </div>
@@ -139,31 +114,20 @@ const Footer = () => {
                 </div>
 
                 {/* --- BOTTOM BAR --- */}
-                <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="border-t border-white/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="flex items-center gap-8">
                         <p className="text-xs text-gray-500">
                             &copy; 2026 EasySub Inc.
                         </p>
-                        <div className="hidden md:flex items-center gap-6">
-                            <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Privacy</a>
-                            <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Terms</a>
-                        </div>
+
                     </div>
 
                     <div className="flex items-center gap-4">
                         <span className="text-xs text-gray-600 mr-2">
                             Crafted by <span className="text-pink-500 font-bold text-[13px]">Javanshir</span>
                         </span>
-                        <div className="h-4 w-px bg-white/10" />
-                        {[Twitter, Github, Linkedin, Instagram].map((Icon, i) => (
-                            <a
-                                key={i}
-                                href="#"
-                                className="text-gray-500 hover:text-blue-400 transition-colors"
-                            >
-                                <Icon size={18} />
-                            </a>
-                        ))}
+
+
                     </div>
                 </div>
             </div>
