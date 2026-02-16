@@ -305,14 +305,7 @@ export default function ProductPage() {
 
                     </div>
 
-                    {/* Trust Box under the card */}
-                    <div className="mt-6 bg-white border border-slate-100 rounded-2xl p-4 flex items-center justify-between text-xs font-semibold text-slate-500">
-                        <span className="flex items-center gap-1"><Clock size={14} /> Instant</span>
-                        <span className="h-4 w-px bg-slate-200"></span>
-                        <span className="flex items-center gap-1"><Shield size={14} /> SSL Secure</span>
-                        <span className="h-4 w-px bg-slate-200"></span>
-                        <span className="flex items-center gap-1"><Star size={14} /> Verified</span>
-                    </div>
+
                 </div>
 
             </div>
