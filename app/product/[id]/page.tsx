@@ -177,33 +177,48 @@ export default function ProductPage() {
                                 <div className="space-y-3 mb-8">
                                     {(Object.keys(product.pricing) as Array<keyof typeof product.pricing>).map((key) => {
                                         const price = product.pricing[key];
+
+                                        // 1. Check if price is null
+                                        const isUnavailable = price === null;
+
                                         const isSelected = duration === key;
                                         const isYearly = key === "yearly";
 
                                         return (
                                             <button
                                                 key={key}
-                                                onClick={() => setDuration(key)}
-                                                className={`w-full relative group p-4 rounded-xl border-2 text-left transition-all duration-200 ${isSelected
-                                                    ? "border-blue-600 bg-blue-50 shadow-md"
-                                                    : "border-slate-100 hover:border-blue-200 bg-white"
+                                                // 2. Disable interaction if unavailable
+                                                disabled={isUnavailable}
+                                                onClick={() => !isUnavailable && setDuration(key)}
+                                                className={`w-full relative group p-4 rounded-xl border-2 text-left transition-all duration-200 
+                    ${isUnavailable
+                                                        ? "border-slate-100 bg-slate-50 opacity-60 cursor-not-allowed grayscale" // Unavailable styles
+                                                        : isSelected
+                                                            ? "border-blue-600 bg-blue-50 shadow-md"
+                                                            : "border-slate-100 hover:border-blue-200 bg-white"
                                                     }`}
                                             >
-                                                {isYearly && (
+                                                {/* Only show badge if available */}
+                                                {isYearly && !isUnavailable && (
                                                     <span className="absolute -top-2 -right-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm">
                                                         BEST VALUE
                                                     </span>
                                                 )}
+
                                                 <div className="flex justify-between items-center">
                                                     <div>
                                                         <span className={`block text-sm font-bold capitalize ${isSelected ? "text-blue-800" : "text-slate-700"}`}>
                                                             {key.replace("_", " ")}
                                                         </span>
-                                                        <span className="text-xs text-slate-400 font-medium">Auto-renewal available</span>
+                                                        {/* Hide auto-renewal text if unavailable */}
+                                                        {!isUnavailable && (
+                                                            <span className="text-xs text-slate-400 font-medium">Auto-renewal available</span>
+                                                        )}
                                                     </div>
                                                     <div className="text-right">
-                                                        <span className={`block text-xl font-black ${isSelected ? "text-blue-600" : "text-slate-900"}`}>
-                                                            ${price}
+                                                        {/* 3. Logic to show Price or 'Unavailable' */}
+                                                        <span className={`block ${isUnavailable ? "text-sm font-bold text-slate-400" : "text-xl font-black"} ${isSelected ? "text-blue-600" : "text-slate-900"}`}>
+                                                            {isUnavailable ? "Unavailable" : `$${price}`}
                                                         </span>
                                                     </div>
                                                 </div>
@@ -213,7 +228,7 @@ export default function ProductPage() {
                                 </div>
 
                                 {/* Total Summary */}
-                                <div className="border-t border-slate-100 pt-4 mb-6">
+                                <div className="border-t border-slate-200 pt-4 mb-6">
                                     <div className="flex justify-between items-end">
                                         <span className="text-slate-500 text-sm font-medium">Total Price</span>
                                         <span className="text-3xl font-black text-slate-900">${product.pricing[duration as keyof typeof product.pricing]}</span>

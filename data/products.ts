@@ -7,8 +7,8 @@ export const products = [
         description: "4K UHD streaming, 4 screens allowed.",
         pricing: {
             monthly: 5,
-            six_months: 25,
-            yearly: 45,
+            six_months: null,
+            yearly: null,
         },
     },
     {
@@ -17,6 +17,30 @@ export const products = [
         category: "video",
         image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
         description: "Ad-free videos, background play, and YouTube Music.",
+        pricing: {
+            monthly: 3,
+            six_months: null,
+            yearly: 28,
+        },
+    },
+    {
+        id: "amazon",
+        name: "Amazon Prime Video",
+        category: "video",
+        image: "https://download.logo.wine/logo/Amazon_Prime/Amazon_Prime-Logo.wine.png",
+        description: "Access to exclusive Amazon Originals and more.",
+        pricing: {
+            monthly: 3,
+            six_months: null,
+            yearly: null,
+        },
+    },
+    {
+        id: "duolingo",
+        name: "Duolingo Plus",
+        category: "education",
+        image: "https://www.pngmart.com/files/23/Duolingo-PNG-Clipart.png",
+        description: "Unlock all languages, no ads, and offline learning.",
         pricing: {
             monthly: 3,
             six_months: 15,
@@ -43,7 +67,31 @@ export const products = [
         description: "Faster response times, priority access to new features.",
         pricing: {
             monthly: 20,
+            six_months: null,
+            yearly: null,
+        },
+    },
+    {
+        id: "canva",
+        name: "Canva Pro",
+        category: "design",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/048/759/334/small/canva-transparent-icon-free-png.png",
+        description: "Advanced design tools, templates, and stock assets.",
+        pricing: {
+            monthly: 20,
             six_months: 100,
+            yearly: 180,
+        },
+    },
+    {
+        id: "gemini",
+        name: "Gemini Pro",
+        category: "ai",
+        image: "https://crystalpng.com/wp-content/uploads/2025/11/Gemini-logo.png",
+        description: "Advanced AI capabilities for creative and professional tasks.",
+        pricing: {
+            monthly: 20,
+            six_months: null,
             yearly: 180,
         },
     },

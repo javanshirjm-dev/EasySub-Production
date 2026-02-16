@@ -7,9 +7,9 @@ import {
     Music,
     Bot,
     Code,
+    BookOpen,
     Sparkles,
-    ShoppingBag,
-    Wallet
+    ShoppingBag
 } from "lucide-react";
 
 const montserrat = Montserrat({
@@ -22,9 +22,9 @@ const categories = [
     { id: "video", label: "Video", icon: Clapperboard },
     { id: "music", label: "Music", icon: Music },
     { id: "ai", label: "AI Tools", icon: Bot },
-    { id: "software", label: "Apps", icon: Code },
+    { id: "education", label: "Education", icon: BookOpen },
+    { id: "design", label: "Design", icon: Sparkles },
 
-    { id: "market", label: "Shop", icon: ShoppingBag },
 
 ];
 
