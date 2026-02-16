@@ -1,4 +1,5 @@
 "use client";
+import { Montserrat } from "next/font/google";
 
 import {
     LayoutGrid,
@@ -10,7 +11,10 @@ import {
     ShoppingBag,
     Wallet
 } from "lucide-react";
-
+const montserrat = Montserrat({
+    weight: "800",
+    subsets: ["latin"],
+});
 const categories = [
     { id: "all", label: "All", icon: LayoutGrid },
     { id: "video", label: "Video", icon: Clapperboard },
@@ -31,7 +35,7 @@ export default function Banner({ activeCategory, onSelectCategory }: BannerProps
     return (
         <div className="max-w-7xl mx-auto px-4 pt-6 mb-10">
 
-            <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-3xl p-8 md:p-12 overflow-hidden shadow-2xl text-white">
+            <div className="relative bg-gradient-to-br from-blue-600 via-blue-800 to-indigo-900 rounded-3xl p-8 md:p-12 overflow-hidden shadow-2xl text-white">
 
                 {/* --- DECORATIVE BACKGROUND BLOBS (The "Cool" Factor) --- */}
                 <div className="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 bg-blue-400 rounded-full blur-[80px] opacity-20 pointer-events-none"></div>
@@ -40,7 +44,7 @@ export default function Banner({ activeCategory, onSelectCategory }: BannerProps
                 <div className="relative z-10 flex flex-col items-center text-center">
 
                     {/* TEXT CONTENT */}
-                    <h1 className="text-3xl md:text-5xl font-black mb-4 tracking-tight drop-shadow-md">
+                    <h1 className={`text-3xl md:text-5xl  ${montserrat.className} mb-4 tracking-tight drop-shadow-md`}>
                         Premium for Less.
                     </h1>
                     <p className="text-blue-100 text-lg mb-10 max-w-2xl font-medium opacity-90">

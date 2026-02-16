@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { products } from "@/data/products";
+import { Montserrat } from "next/font/google";
+
 import { notFound, useParams, useRouter } from "next/navigation";
 import {
     Check,
@@ -19,6 +21,11 @@ import {
 import Link from "next/link";
 
 const OWNER_PHONE_NUMBER = "994515978888";
+
+const montserrat = Montserrat({
+    weight: "800",
+    subsets: ["latin"],
+});
 
 // Dummy FAQ Data (You can move this to a data file later)
 const FAQS = [
@@ -88,10 +95,10 @@ export default function ProductPage() {
                     {/* 1. HERO IMAGE CARD */}
                     <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100 relative overflow-hidden">
                         {/* Background Blob */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full blur-[80px] -mr-16 -mt-16 pointer-events-none"></div>
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full blur-[80px] -mr-16 -mt-16 pointer-events-none"></div>
 
                         <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
-                            <div className="w-40 h-40 md:w-56 md:h-56 flex-shrink-0 bg-white rounded-3xl shadow-lg flex items-center justify-center p-6">
+                            <div className="w-40 h-40 md:w-56 md:h-56 flex-shrink-0 bg-white rounded-3xl shadow-xl flex items-center justify-center p-6">
                                 <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
                             </div>
                             <div>
@@ -104,7 +111,7 @@ export default function ProductPage() {
                                         <span className="text-slate-500 font-semibold">4.9/5 Rating</span>
                                     </div>
                                 </div>
-                                <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">{product.name}</h1>
+                                <h1 className={`text-3xl md:text-5xl ${montserrat.className} text-slate-900 mb-4 tracking-tight`}>{product.name}</h1>
                                 <p className="text-slate-500 text-lg leading-relaxed">{product.description}</p>
                             </div>
                         </div>

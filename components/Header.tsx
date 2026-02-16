@@ -59,7 +59,7 @@ export default function Header() {
                 {/* --- LOGO --- */}
                 <Link
                     href="/"
-                    className="text-2xl font-black text-blue-600 tracking-tighter hover:scale-105 transition-transform flex-shrink-0 [-webkit-text-stroke:1.5px_currentColor]"
+                    className="text-2xl font-bold text-blue-600 tracking-tighter hover:scale-105 transition-transform flex-shrink-0 [-webkit-text-stroke:1.5px_currentColor]"
                 >
                     EASY
                     {/* We apply the stroke here too so it matches the SUB color, not the parent color */}

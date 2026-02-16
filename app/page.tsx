@@ -39,7 +39,7 @@ export default function Home() {
               <Link href={`/product/${product.id}`} key={product.id} className="group relative">
 
                 {/* CARD CONTAINER */}
-                <div className="h-full bg-white rounded-[2rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-2 border border-gray-100 overflow-hidden relative z-10">
+                <div className="h-full bg-white rounded-[2rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-2 border-2 border-blue-200 overflow-hidden relative z-10">
 
                   {/* --- 1. IMAGE SECTION WITH SPOTLIGHT --- */}
                   <div className="relative h-48 w-full rounded-[1.5rem] bg-gray-50 overflow-hidden flex items-center justify-center mb-4 group-hover:bg-blue-50/50 transition-colors duration-500">
