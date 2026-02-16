@@ -121,7 +121,7 @@ const Footer = () => {
                             {/* Middle Part */}
                             <div className="relative z-10 mt-7">
                                 <div className="text-4xl font-mono text-white tracking-tighter tabular-nums">
-                                    12,403
+                                    1,024
                                 </div>
                                 <div className="text-xs text-gray-500 mt-1 font-medium">Active Users</div>
                             </div>
@@ -132,7 +132,7 @@ const Footer = () => {
                                     <Activity size={14} className="text-blue-500" />
                                     <span>Server Load</span>
                                 </div>
-                                <span className="text-xs font-mono text-white">34%</span>
+                                <span className="text-xs font-mono text-white">23%</span>
                             </div>
                         </div>
                     </div>
