@@ -25,7 +25,7 @@ export default function Home() {
 
 
         <div className="flex items-end gap-3 mb-10">
-          <h2 className="text-3xl font-black text-gray-900 tracking-tight">
+          <h2 className="text-3xl font-bold font-sans text-gray-900 tracking-tight">
             {category === "all" ? "Explore Premium" : category.charAt(0).toUpperCase() + category.slice(1)}
           </h2>
           <div className="h-1 flex-1 bg-gray-200 rounded-full mb-2">
@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="h-full bg-white rounded-[2rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-2 border-2 border-blue-200 overflow-hidden relative z-10">
 
                   {/* --- 1. IMAGE SECTION WITH SPOTLIGHT --- */}
-                  <div className="relative h-48 w-full rounded-[1.5rem] bg-gray-50 overflow-hidden flex items-center justify-center mb-4 group-hover:bg-blue-50/50 transition-colors duration-500">
+                  <div className="relative h-48 w-full rounded-[1.5rem] bg-gray-100 overflow-hidden flex items-center justify-center mb-4 group-hover:bg-blue-50/50 transition-colors duration-500">
 
                     {/* The Spotlight Orb (Moves/Expands on hover) */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-blue-400/20 blur-[50px] rounded-full group-hover:w-40 group-hover:h-40 group-hover:bg-blue-500/20 transition-all duration-700"></div>

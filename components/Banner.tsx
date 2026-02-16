@@ -11,10 +11,12 @@ import {
     ShoppingBag,
     Wallet
 } from "lucide-react";
+
 const montserrat = Montserrat({
     weight: "800",
     subsets: ["latin"],
 });
+
 const categories = [
     { id: "all", label: "All", icon: LayoutGrid },
     { id: "video", label: "Video", icon: Clapperboard },

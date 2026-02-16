@@ -1,4 +1,5 @@
 "use client";
+import { Montserrat } from "next/font/google";
 
 import {
     Zap,
@@ -9,6 +10,11 @@ import {
     HeartHandshake,
     ChevronRight
 } from "lucide-react";
+
+const montserrat = Montserrat({
+    weight: "800",
+    subsets: ["latin"],
+});
 
 const features = [
     {
@@ -51,7 +57,7 @@ export default function Features() {
 
                 {/* SECTION HEADER */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">
+                    <h2 className={`text-3xl md:text-4xl  ${montserrat.className} text-slate-900 mb-4 tracking-tight`}>
                         Why they choose <span className="text-blue-600">us?</span>
                     </h2>
                     <p className="text-slate-500 text-lg">
