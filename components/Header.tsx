@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { products } from "@/data/products";
+import Image from "next/image";
 
 export default function Header() {
     const router = useRouter();
@@ -56,17 +57,15 @@ export default function Header() {
         <header className="bg-blue-50 backdrop-blur-md sticky top-0 z-50  shadow-md">
             <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
 
-                {/* --- LOGO --- */}
-                <Link
-                    href="/"
-                    className="text-2xl font-bold text-blue-600 tracking-tighter hover:scale-105 transition-transform flex-shrink-0 [-webkit-text-stroke:1.5px_currentColor]"
-                >
-                    EASY
-                    {/* We apply the stroke here too so it matches the SUB color, not the parent color */}
-                    <span className="text-blue-900 [-webkit-text-stroke:1.5px_currentColor]">
-                        SUB
-                    </span>
-                    .
+                <Link href="/" className="flex items-center gap-2 hover:opacity-80 duration-300 transition-opacity">
+                    <Image
+                        src="/headerlogo.png"  // 👈 CHANGE THIS to your actual filename
+                        alt="EasySub Logo"
+                        width={140}                    // Adjust width (in pixels)
+                        height={40}                    // Adjust height (in pixels)
+                        priority                       // Loads immediately (good for SEO/Headers)
+                        className="w-auto h-10 md:h-13" // CSS to make it responsive (smaller on mobile)
+                    />
                 </Link>
 
                 {/* --- SEARCH BAR --- */}
