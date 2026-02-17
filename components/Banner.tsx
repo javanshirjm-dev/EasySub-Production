@@ -8,6 +8,7 @@ import {
     Bot,
     Code,
     BookOpen,
+    MessageSquareHeartIcon,
     Sparkles,
     ShoppingBag
 } from "lucide-react";
@@ -22,6 +23,7 @@ const categories = [
     { id: "video", label: "Video", icon: Clapperboard },
     { id: "music", label: "Music", icon: Music },
     { id: "ai", label: "AI Tools", icon: Bot },
+    { id: "social", label: "Social", icon: MessageSquareHeartIcon },
     { id: "education", label: "Education", icon: BookOpen },
     { id: "design", label: "Design", icon: Sparkles },
 

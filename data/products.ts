@@ -6,7 +6,7 @@ export const products = [
         image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
         description: "4K UHD streaming, 4 screens allowed.",
         pricing: {
-            monthly: 5,
+            monthly: 4.99,
             six_months: null,
             yearly: null,
         },
@@ -18,9 +18,21 @@ export const products = [
         image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
         description: "Ad-free videos, background play, and YouTube Music.",
         pricing: {
-            monthly: 3,
+            monthly: 5.99,
             six_months: null,
-            yearly: 28,
+            yearly: 59.99,
+        },
+    },
+    {
+        id: "tinder",
+        name: "Tinder Gold",
+        category: "social",
+        image: "https://ca.tinderpressroom.com/download/Wordmark-R+Tinder+pink-RGB.png",
+        description: "See who liked you, boost your profile, and more.",
+        pricing: {
+            monthly: 9.99,
+            six_months: 49.99,
+            yearly: null,
         },
     },
     {
@@ -30,7 +42,7 @@ export const products = [
         image: "https://download.logo.wine/logo/Amazon_Prime/Amazon_Prime-Logo.wine.png",
         description: "Access to exclusive Amazon Originals and more.",
         pricing: {
-            monthly: 3,
+            monthly: null,
             six_months: null,
             yearly: null,
         },
@@ -42,9 +54,9 @@ export const products = [
         image: "https://www.pngmart.com/files/23/Duolingo-PNG-Clipart.png",
         description: "Unlock all languages, no ads, and offline learning.",
         pricing: {
-            monthly: 3,
-            six_months: 15,
-            yearly: 28,
+            monthly: 4.99,
+            six_months: 24.99,
+            yearly: 49.99,
         },
     },
     {
@@ -54,19 +66,19 @@ export const products = [
         image: "https://download.logo.wine/logo/Spotify/Spotify-Logo.wine.png",
         description: "Ad-free music listening, offline playback.",
         pricing: {
-            monthly: 4,
-            six_months: 20,
-            yearly: 35,
+            monthly: 3.50,
+            six_months: 17.99,
+            yearly: 30.99,
         },
     },
     {
         id: "chatgpt",
-        name: "ChatGPT Plus",
+        name: "ChatGPT Pro Plan",
         category: "ai",
         image: "https://upload.wikimedia.org/wikipedia/commons/1/13/ChatGPT-Logo.png",
         description: "Faster response times, priority access to new features.",
         pricing: {
-            monthly: 20,
+            monthly: 6.99,
             six_months: null,
             yearly: null,
         },
@@ -78,9 +90,9 @@ export const products = [
         image: "https://static.vecteezy.com/system/resources/thumbnails/048/759/334/small/canva-transparent-icon-free-png.png",
         description: "Advanced design tools, templates, and stock assets.",
         pricing: {
-            monthly: 20,
-            six_months: 100,
-            yearly: 180,
+            monthly: 2.99,
+            six_months: 14.99,
+            yearly: 26.99,
         },
     },
     {
@@ -90,9 +102,9 @@ export const products = [
         image: "https://crystalpng.com/wp-content/uploads/2025/11/Gemini-logo.png",
         description: "Advanced AI capabilities for creative and professional tasks.",
         pricing: {
-            monthly: 20,
+            monthly: 2.99,
             six_months: null,
-            yearly: 180,
+            yearly: 19.99,
         },
     },
 ];
