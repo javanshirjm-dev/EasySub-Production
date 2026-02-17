@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { products } from "@/data/products";
+import RequestCard from "@/components/RequestCard";
 import Banner from "@/components/Banner";
 import { ArrowRight, Sparkles } from "lucide-react"; // Ensure you have lucide-react installed
 import Features from "@/components/Features";
@@ -35,6 +36,7 @@ export default function Home() {
 
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <RequestCard />
             {filteredProducts.map((product) => (
               <Link href={`/product/${product.id}`} key={product.id} className="group relative">
 
