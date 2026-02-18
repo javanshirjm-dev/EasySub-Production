@@ -61,7 +61,7 @@ export default function RequestCard() {
                             fontFamily: "monospace",
                         }}
                     >
-                        Can't see what you need? 🔍
+                        Can't find it? 🔍
                     </h3>
                     <p
                         className="text-sm text-black mt-1"
@@ -85,7 +85,7 @@ export default function RequestCard() {
                             padding: "10px 14px",
                             color: "white",
                             fontFamily: "monospace",
-                            fontSize: "14px",
+                            fontSize: "16px",
                             outline: "none",
                             boxShadow: "inset 0 2px 4px rgba(0,0,0,0.4)",
                         }}
@@ -101,6 +101,7 @@ export default function RequestCard() {
                                 : "linear-gradient(145deg, #888, #666)",
                             border: "2px solid #222",
                             borderRadius: "14px",
+                            fontSize: "16px",
                             padding: "10px 16px",
                             color: productName.trim() ? "#e0e0e0" : "#aaa",
                             fontFamily: "monospace",

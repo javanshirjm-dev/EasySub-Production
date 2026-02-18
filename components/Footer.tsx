@@ -13,6 +13,7 @@ import {
     Box,
     ExternalLink
 } from "lucide-react";
+import ChatBot from "./ChatBot";
 
 const Footer = () => {
     return (
@@ -142,6 +143,7 @@ const Footer = () => {
                     animation: scan-vertical 6s linear infinite;
                 }
             `}</style>
+            <ChatBot />
         </footer>
     )
 }
