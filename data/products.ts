@@ -111,7 +111,7 @@ export const products = [
         description: "Advanced AI capabilities for creative and professional tasks.",
         billing: "/month", // 👈 Monthly sub
         pricing: {
-            monthly: 2.99,
+            monthly: 4.99,
             six_months: null,
             yearly: 19.99,
         },
