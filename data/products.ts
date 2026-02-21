@@ -202,7 +202,7 @@ export const products = [
         billing: "permanent", // 👈 Permanent sub
         pricing: {
 
-            permanent: 29.99,
+            permanent: 5.99,
         },
     },
 ];
