@@ -26,6 +26,7 @@ const categories = [
     { id: "social", label: "Social", icon: MessageSquareHeartIcon },
     { id: "education", label: "Education", icon: BookOpen },
     { id: "design", label: "Design", icon: Sparkles },
+    { id: "software", label: "Software", icon: Code },
 
 
 ];

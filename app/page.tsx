@@ -76,10 +76,10 @@ export default function Home() {
 
                       {/* Price (Fades out slightly on hover to focus on button) */}
                       <div className="flex flex-col group-hover:opacity-50 transition-opacity duration-300">
-                        <span className="text-[10px] text-gray-400 font-semibold uppercase">Monthly</span>
+                        <span className="text-[10px] text-gray-400 font-semibold uppercase">{product.billing}</span>
                         <div className="flex items-baseline gap-0.5">
                           <span className="text-sm font-bold text-blue-600">$</span>
-                          <span className="text-2xl font-black text-gray-900">{product.pricing.monthly}</span>
+                          <span className="text-2xl font-black text-gray-900">{product.pricing.monthly ? product.pricing.monthly.toFixed(2) : product.pricing.permanent}</span>
                         </div>
                       </div>
 

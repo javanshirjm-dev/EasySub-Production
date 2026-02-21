@@ -53,7 +53,14 @@ export default function ProductPage() {
     const product = products.find((p) => p.id === params.id);
 
     // States
-    const [duration, setDuration] = useState<string>("monthly");
+    const [duration, setDuration] = useState<string>(() => {
+        // 1. Try to default to monthly if available
+        if (product?.pricing.monthly) return "monthly";
+        // 2. If not, try permanent
+        if (product?.pricing.permanent) return "permanent";
+        // 3. Fallback to empty string if neither is available
+        return "";
+    });
     const [step, setStep] = useState(1);
     const [userName, setUserName] = useState("");
     const [openFaq, setOpenFaq] = useState<number | null>(0); // Default first one open
