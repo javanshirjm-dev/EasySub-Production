@@ -1,7 +1,7 @@
 export const products = [
     {
-        id: "netflix",
-        name: "Netflix Premium",
+        id: "netflx",
+        name: "Netflx Premium",
         category: "video",
         image: "/images/netflix.png",
         description: "4K UHD streaming, 4 screens allowed.",
@@ -13,11 +13,11 @@ export const products = [
         },
     },
     {
-        id: "youtube",
-        name: "YouTube Premium",
+        id: "yotube",
+        name: "YoTube Premium",
         category: "video",
         image: "/images/yotube.png",
-        description: "Ad-free videos, background play, and YouTube Music.",
+        description: "Ad-free videos, background play, and YoTube Music.",
         billing: "/month", // 👈 Monthly sub
         pricing: {
             monthly: 5.99,
@@ -65,8 +65,8 @@ export const products = [
         },
     },
     {
-        id: "spotify",
-        name: "Spotify Premium",
+        id: "spotfy",
+        name: "Spotfy Premium",
         category: "music",
         image: "/images/spotify.png",
         description: "Ad-free music listening, offline playback.",
@@ -91,8 +91,8 @@ export const products = [
         },
     },
     {
-        id: "canva",
-        name: "Canva Pro",
+        id: "cannva",
+        name: "Cannva Pro",
         category: "design",
         image: "/images/canva.png",
         description: "Advanced design tools, templates, and stock assets.",
