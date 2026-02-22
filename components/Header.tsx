@@ -74,7 +74,7 @@ export default function Header() {
                         <input
                             type="text"
                             placeholder="Search..."
-                            className="w-full bg-white text-gray-700 pl-10 pr-4 py-2.5 rounded-full border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent shadow-sm transition-all"
+                            className="w-full bg-white text-gray-700 pl-10 pr-4 py-2.5 rounded-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent shadow-sm transition-all"
                             value={query}
                             onChange={(e) => {
                                 setQuery(e.target.value);
@@ -130,7 +130,11 @@ export default function Header() {
                         className="hidden sm:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg active:scale-95"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
+                            <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 8a5.657 5.657 0 000 8" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8a5.657 5.657 0 010 8" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.929 4.929a11.314 11.314 0 000 14.142" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.071 4.929a11.314 11.314 0 010 14.142" />
                         </svg>
                         Support
                     </a>
